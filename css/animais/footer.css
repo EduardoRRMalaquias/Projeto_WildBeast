@@ -2,11 +2,11 @@
 
 .footer {
   grid-area: footer;
-  background: linear-gradient(135deg, #8844ee, #b07bfb);
+  background: linear-gradient(135deg, var(--cor-p1), var(--cor-p2));
 }
 
 .footer p {
-  color: #ffffff;
+  color: var(--cor-00);
   text-align: center;
   padding: 2rem;
 }

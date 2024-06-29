@@ -1,7 +1,7 @@
 /* anuncios*/
 .anuncios {
   grid-area: anuncios;
-  background-color: #fafbfc;
+  background-color: var(--cor-01);
   display: grid;
   align-content: start;
   padding: 2rem;

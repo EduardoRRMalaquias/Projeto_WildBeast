@@ -2,14 +2,22 @@
   /*cores base*/
   --cor-00: #ffffff;
   --cor-01: #fafbfc;
-
-  --cor-: #2c2c2c26;
-  --cor-: #00000010;
-  --cor-: #00000090;
-  --cor-: #000000aa;
-  /*cores primarias */
-  --cor-p1: #8844ee;
-  --cor-p2: #b07bfb;
+  --cor-02: #2c2c2c26;
+  --cor-03: #00000010;
+  --cor-04: #00000090;
+  --cor-05: #000000aa;
+  /* tipografia*/
+  --font-XG: 300 3rem/1 "Volkorn", Georgia, "Times New Roman", Times, serif;
+  --font-GG: 300 italic 1.5rem/1.2 "Volkorn", Georgia, "Times New Roman", Times,
+    serif;
+  --font-G: 300 1.2rem/1.6 "Volkorn", Georgia, "Times New Roman", Times, serif;
+  --font-m: 300 1.125rem/1.4 "Volkorn", Georgia, "Times New Roman", Times, serif;
+  --font-m-mono: 300 1.125rem/1.2 "Courier New", Courier, monospace;
+  --font-p: 300 1rem/1.4 "Volkorn", Georgia, "Times New Roman", Times, serif;
+  --font-pp-i: 300 italic 0.875rem/1.2 "Volkorn", Georgia, "Times New Roman",
+    Times, serif;
+  --font-pp: 300 0.875rem/1.2 "Volkorn", Georgia, "Times New Roman", Times,
+    serif;
 }
 
 /*Global*/
@@ -34,7 +42,7 @@ a {
 img {
   width: 100%;
   display: block;
-  border-radius: 0, 375rem;
+  border-radius: 0.375rem;
 }
 
 /*grid geral*/

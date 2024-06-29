@@ -2,7 +2,7 @@
 
 .sidenav {
   grid-area: sidenav;
-  background-color: #fafbfc;
+  background-color: var(--cor-01);
   padding: 2rem;
 }
 
@@ -11,14 +11,14 @@
   min-width: 3.75rem;
   max-width: 6.25rem;
   margin: 0 auto 2rem auto;
-  background-color: #ffffff;
+  background-color: var(--cor-00);
   padding: 1.25rem;
   border-radius: 0.375rem;
-  box-shadow: 0.375rem 0.375rem 1rem 0 rgba(44, 44, 44, 0.15);
+  box-shadow: 0.375rem 0.375rem 1rem 0 var(--cor-02);
   transition: 0.2s ease-in-out;
 }
 .sidenav li a:hover {
-  background-color: #b07bfb;
+  background-color: var(--cor-p2);
 }
 
 @keyframes seta {
@@ -43,7 +43,7 @@
     position: absolute;
     top: 0.375rem;
     right: 2rem;
-    color: #00000090;
+    color: var(--cor-04);
     animation: seta 0.5s ease-in 0s infinite alternate;
   }
 
