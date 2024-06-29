@@ -1,0 +1,10 @@
+/* anuncios*/
+.anuncios {
+  grid-area: anuncios;
+  background-color: #fafbfc;
+  display: grid;
+  align-content: start;
+  padding: 2rem;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}

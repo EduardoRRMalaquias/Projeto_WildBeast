@@ -1,0 +1,62 @@
+/*asidenav*/
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #fafbfc;
+  padding: 2rem;
+}
+
+.sidenav li a {
+  display: block;
+  min-width: 3.75rem;
+  max-width: 6.25rem;
+  margin: 0 auto 2rem auto;
+  background-color: #ffffff;
+  padding: 1.25rem;
+  border-radius: 0.375rem;
+  box-shadow: 0.375rem 0.375rem 1rem 0 rgba(44, 44, 44, 0.15);
+  transition: 0.2s ease-in-out;
+}
+.sidenav li a:hover {
+  background-color: #b07bfb;
+}
+
+@keyframes seta {
+  from {
+    right: 2rem;
+  }
+  to {
+    right: 1.5rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .sidenav {
+    padding: 2rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    position: relative;
+  }
+  .sidenav::after {
+    content: "→";
+    position: absolute;
+    top: 0.375rem;
+    right: 2rem;
+    color: #00000090;
+    animation: seta 0.5s ease-in 0s infinite alternate;
+  }
+
+  .sidenav ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .sidenav ul li {
+    flex: 1 0 3.75rem;
+  }
+
+  .sidenav ul li a {
+    margin: 0;
+  }
+}
