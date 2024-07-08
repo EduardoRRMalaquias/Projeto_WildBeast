@@ -1,8 +1,9 @@
 /* global*/
-@import "animais/global.css";
-@import "animais/header.css";
-@import "animais/footer.css";
+@import "./global/global.css";
+@import "./global/header.css";
+@import "./global/footer.css";
 
-@import "animais/asidenav.css";
-@import "animais/content.css";
-@import "animais/anuncios.css";
+@import "./animais/asidenav.css";
+@import "./animais/content.css";
+@import "./animais/anuncios.css";
+@import "./introducao/introducao.css";

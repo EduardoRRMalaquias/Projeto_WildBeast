@@ -1,7 +1,10 @@
 /* footer */
 
-.footer {
+.estrutura .footer {
   grid-area: footer;
+}
+
+.footer {
   background: linear-gradient(135deg, var(--cor-p1), var(--cor-p2));
 }
 

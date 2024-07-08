@@ -1,6 +1,8 @@
 /*header*/
-.header {
+.estrutura .header {
   grid-area: header;
+}
+.header {
   background: linear-gradient(135deg, var(--cor-p1), var(--cor-p2));
   padding: 2rem;
   display: grid;
