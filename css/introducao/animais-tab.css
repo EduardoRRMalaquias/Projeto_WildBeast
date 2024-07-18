@@ -1,0 +1,56 @@
+/* animais tabNav*/
+
+.animais-descricao {
+  grid-column: 3;
+}
+
+.animais-descricao h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  color: var(--cor-p1);
+}
+.animais-descricao h2::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  margin-right: 10px;
+  background: linear-gradient(135deg, var(--cor-p1), var(--cor-p2));
+}
+
+.animais-descricao section {
+  margin-bottom: 3rem;
+}
+
+.animais-lista {
+  height: 370px;
+  overflow-y: scroll;
+  grid-column: 2;
+}
+
+.animais-lista img {
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.animais-lista img:hover {
+  opacity: 0.9;
+}
+
+.animais-lista::-webkit-scrollbar {
+  width: 18px;
+}
+
+.animais-lista::-webkit-scrollbar-thumb {
+  background-color: var(--cor-p2);
+  width: 18px;
+  border-left: 4px solid #faf6ed;
+}
+
+@media (max-width: 900px) {
+  .animais-lista {
+    grid-column: 1;
+  }
+}

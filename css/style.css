@@ -1,9 +1,18 @@
 /* global*/
+@import "./global/javaScript.css";
 @import "./global/global.css";
 @import "./global/header.css";
 @import "./global/footer.css";
 
+/* introducao */
+@import "./introducao/introducao.css";
+@import "./introducao/animais-tab.css";
+@import "./introducao/faq.css";
+@import "./introducao/contato.css";
+@import "./introducao/modal.css";
+@import "./introducao/tooltip.css";
+
+/*animais*/
 @import "./animais/asidenav.css";
 @import "./animais/content.css";
 @import "./animais/anuncios.css";
-@import "./introducao/introducao.css";

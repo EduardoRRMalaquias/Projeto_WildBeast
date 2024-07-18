@@ -1,0 +1,33 @@
+/* faq */
+
+.faq-lista {
+  grid-column: 2 / 4;
+}
+
+.faq-lista dt {
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--cor-p1);
+}
+.faq-lista dt::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: linear-gradient(135deg, var(--cor-p1), var(--cor-p2));
+}
+
+.faq-lista dd {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cor-04);
+  margin-bottom: 0.5rem;
+  margin-right: 30px;
+}
+
+@media (max-width: 900px) {
+  .faq-lista {
+    grid-column: 1 / 3;
+  }
+}
