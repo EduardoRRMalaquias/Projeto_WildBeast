@@ -6,6 +6,7 @@ import initMocdal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuHamburguer from "./modules/menu-hamburguer.js";
+import initAnimaNumeros from "./modules/anima-numeros.js";
 
 initScrollSuave();
 initAnimaScrol();
@@ -15,3 +16,4 @@ initMocdal();
 initTooltip();
 initDropdownMenu();
 initMenuHamburguer();
+initAnimaNumeros();

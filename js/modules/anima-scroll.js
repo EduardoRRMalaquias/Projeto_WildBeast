@@ -6,10 +6,12 @@ export default function initAnimaScrol() {
     function animaScrol() {
       sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top;
-        const sectionVisivel = sectionTop - mediaScroll <= 0;
-        sectionVisivel
-          ? section.classList.add("ativo")
-          : section.classList.remove("ativo");
+        const sectionVisivel = sectionTop - mediaScroll < 0;
+        if (sectionVisivel) {
+          section.classList.add("ativo");
+        } else if (section.classList.contains("ativo")) {
+          section.classList.remove("ativo");
+        }
       });
     }
 
