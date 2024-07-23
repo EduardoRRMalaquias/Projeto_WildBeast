@@ -3,6 +3,10 @@
 }
 
 @media (max-width: 500px) {
+  .header {
+    grid-template-columns: 1fr auto;
+  }
+
   .js [data-menu="button"] {
     display: flex;
     background-color: var(--cor-02);
@@ -26,14 +30,19 @@
   .js [data-menu="button"]::before {
     content: "";
     display: inline-block;
-    height: 2px;
+    height: 4px;
     width: 20px;
     background-color: white;
     box-shadow: 0 8px #ffffff, 0 -8px #ffffff;
+    transition: 0.5s;
+  }
+
+  .js [data-menu="button"].ativo::before {
+    transform: rotate(90deg);
   }
 
   .js [data-menu="list"] {
-    display: flex;
+    display: none;
     position: absolute;
     background: linear-gradient(135deg, var(--cor-p1), var(--cor-p2));
     width: 160px;
@@ -42,6 +51,11 @@
     padding: 32px;
     box-shadow: 2px 2px 2px 0 #2c2c2c26;
     flex-direction: column;
+  }
+
+  .js [data-menu="list"].ativo {
+    display: flex;
+    animation: show-right 0.3s forwards;
   }
 
   .js [data-menu="list"] .dropdown-menu {
