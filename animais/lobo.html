@@ -15,16 +15,27 @@
 
 <body class="estrutura" style="--cor-p1: #8844ee;--cor-p2: #b07bfb;">
   <header class="header">
-    <a href="../index.html" class="logo"><img src="../img/wildbeast.svg" alt="WildBeast"></a>
-    <nav>
-      <menu>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Animais</a></li>
-        <li><a href="#">Contatos</a></li>
+    <a href="./index.html" class="logo"><img src="img/wildbeast.svg" alt="WildBeast"></a>
+    <nav class="nav-menu">
+      <menu data-menu="smooth">
+        <li><a href="#faq">Sobre</a></li>
+        <li data-dropdown>
+          <a href="animais/lobo.html">Animais↓</a>
+          <ul class="dropdown-menu">
+            <li><a href="./animais/lobo.html">Lobo</a></li>
+            <li><a href="./animais/cervo.html">Cervo</a></li>
+            <li><a href="./animais/leao.html">Leão</a></li>
+            <li><a href="./animais/gato.html">Gato</a></li>
+            <li><a href="./animais/vaca.html">Vaca</a></li>
+            <li><a href="./animais/ovelha.html">Ovelha</a></li>
+            <li><a href="./animais/abelha.html">Abelha</a></li>
+          </ul>
+        </li>
+        <li><a href="#contato">Contatos</a></li>
+        <li><a data-modal="abrir" href="login.html">Login ➜</a></li>
       </menu>
     </nav>
   </header>
-
   <nav class="sidenav">
     <ul>
       <li>

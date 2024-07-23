@@ -4,6 +4,7 @@
 @import "./global/header.css";
 @import "./global/footer.css";
 @import "./global/dropdown-menu.css";
+@import "./global/menu-hanburguer.css";
 
 /* introducao */
 @import "./introducao/introducao.css";
