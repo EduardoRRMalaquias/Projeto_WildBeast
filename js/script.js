@@ -7,6 +7,7 @@ import initTooltip from "./modules/tooltip.js";
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuHamburguer from "./modules/menu-hamburguer.js";
 import initAnimaNumeros from "./modules/anima-numeros.js";
+import initHorarioFuncionamento from "./modules/horario-funcionamento.js";
 
 initScrollSuave();
 initAnimaScrol();
@@ -17,3 +18,4 @@ initTooltip();
 initDropdownMenu();
 initMenuHamburguer();
 initAnimaNumeros();
+initHorarioFuncionamento();
