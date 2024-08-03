@@ -22,6 +22,13 @@
   background: linear-gradient(135deg, var(--cor-p1), var(--cor-p2));
 }
 
+.btc-preco {
+  background-color: #3f4;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
 [data-semana]::after {
   content: "";
   display: inline-block;
