@@ -8,6 +8,7 @@ import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuHamburguer from "./modules/menu-hamburguer.js";
 import initHorarioFuncionamento from "./modules/horario-funcionamento.js";
 import initFetchAnimais from "./modules/fetch-animais.js";
+import initFetchBitcoin from "./modules/fetch-bitcoin.js";
 
 initScrollSuave();
 initAnimaScrol();
@@ -19,3 +20,4 @@ initDropdownMenu();
 initMenuHamburguer();
 initHorarioFuncionamento();
 initFetchAnimais();
+initFetchBitcoin();
