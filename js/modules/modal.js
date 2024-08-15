@@ -1,22 +1,42 @@
-export default function initModal() {
-  const botaoAbrir = document.querySelector('[data-modal="abrir"');
-  const botaoFechar = document.querySelector('[data-modal="fechar"');
-  const containerModal = document.querySelector('[data-modal="container"');
+export default class Modal {
+  constructor(botaoAbrir, botaoFechar, containerModal) {
+    this.botaoAbrir = document.querySelector(botaoAbrir);
+    this.botaoFechar = document.querySelector(botaoFechar);
+    this.containerModal = document.querySelector(containerModal);
 
-  if (botaoAbrir && botaoFechar && containerModal) {
-    function abrirFecharModal(event) {
-      event.preventDefault();
-      containerModal.classList.toggle("ativo");
+    // alterar this da funcao addModalEvents
+    this.eventAbrirFecharModal = this.eventAbrirFecharModal.bind(this);
+    this.fecharClickForaModal = this.fecharClickForaModal.bind(this);
+  }
+
+  //abre ou Fecha o Modal(
+  abrirFecharModal() {
+    this.containerModal.classList.toggle("ativo");
+  }
+
+  eventAbrirFecharModal(event) {
+    event.preventDefault();
+    this.abrirFecharModal(event);
+  }
+
+  // fecha o modal a clicar do lado de fora
+  fecharClickForaModal(event) {
+    if (event.target === this.containerModal) {
+      this.abrirFecharModal(event);
     }
+  }
 
-    function fecharClickForaModal(event) {
-      if (event.target === this) {
-        abrirFecharModal(event);
-      }
+  // adiciona eventos nos componentes do modal
+  addModalEvents() {
+    this.botaoAbrir.addEventListener("click", this.eventAbrirFecharModal);
+    this.botaoFechar.addEventListener("click", this.eventAbrirFecharModal);
+    this.containerModal.addEventListener("click", this.fecharClickForaModal);
+  }
+
+  init() {
+    if (this.botaoAbrir && this.botaoFechar && this.containerModal) {
+      this.addModalEvents();
     }
-
-    botaoAbrir.addEventListener("click", abrirFecharModal);
-    botaoFechar.addEventListener("click", abrirFecharModal);
-    containerModal.addEventListener("click", fecharClickForaModal);
+    return this;
   }
 }
