@@ -32,7 +32,7 @@ modal.init();
 const tooltip = new Tooltip("[data-tooltip]");
 tooltip.init();
 
-fetchAnimais("../../animaisapi.json", ".numeros-grid");
+fetchAnimais("./animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
 const scrolAnime = new ScrolAnime('[data-anime="scrol"]');
@@ -50,7 +50,10 @@ const menuHamburguer = new MenuHamburguer(
   '[data-menu="list"]',
   ["touchstart", "click"]
 );
-menuHamburguer.init()
+menuHamburguer.init();
 
-const horarioFuncionamento = new HorarioFuncionamento("[data-semana]", "aberto");
-horarioFuncionamento.init()
+const horarioFuncionamento = new HorarioFuncionamento(
+  "[data-semana]",
+  "aberto"
+);
+horarioFuncionamento.init();
