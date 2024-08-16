@@ -3,12 +3,13 @@ import Accordion from "./modules/accordion.js";
 import TabNav from "./modules/tab-nav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
+import fetchAnimais from "./modules/fetch-animais.js";
+import fetchBitcoin from "./modules/fetch-bitcoin.js";
+import ScrolAnime from "./modules/scroll-anima.js";
+
 import initDropdownMenu from "./modules/dropdown-menu.js";
 import initMenuHamburguer from "./modules/menu-hamburguer.js";
 import initHorarioFuncionamento from "./modules/horario-funcionamento.js";
-import fetchAnimais from "./modules/fetch-animais.js";
-import fetchBitcoin from "./modules/fetch-bitcoin.js";
-import initAnimaScrol from "./modules/anima-scroll.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="smooth"] a[href^="#"]');
 scrollSuave.init();
@@ -35,7 +36,9 @@ tooltip.init();
 fetchAnimais("../../animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
+const scrolAnime = new ScrolAnime('[data-anime="scrol"]');
+scrolAnime.init()
+
 initDropdownMenu();
 initMenuHamburguer();
 initHorarioFuncionamento();
-initAnimaScrol();
