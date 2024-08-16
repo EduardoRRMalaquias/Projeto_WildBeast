@@ -1,22 +1,37 @@
 import clickOutside from "./click-outside.js";
 
-export default function initMenuHamburguer() {
-  const menuButton = document.querySelector('[data-menu="button"]');
-  const menuLists = document.querySelector('[data-menu="list"]');
+export default class MenuHamburguer {
+  constructor(menuButton, menuLists, eventos) {
+    this.menuButton = document.querySelector(menuButton);
+    this.menuLists = document.querySelector(menuLists);
 
-  if (menuButton) {
-    const eventos = ["touchstart", "click"];
+    // define os eventos de clique e toque como eventos padrao
+    if (eventos === undefined) this.eventos = ["touchstart", "click"];
+    else this.eventos = eventos;
 
-    function openMenu(event) {
-      menuLists.classList.toggle("ativo");
-      menuButton.classList.toggle("ativo");
-      clickOutside(menuLists, eventos, () => {
-        console.log("teste");
-        menuLists.classList.remove("ativo");
-        menuButton.classList.remove("ativo");
-      });
+    this.class = "ativo";
+    this.openMenu = this.openMenu.bind(this);
+  }
+
+  openMenu() {
+    this.menuLists.classList.toggle(this.class);
+    this.menuButton.classList.toggle(this.class);
+    clickOutside(this.menuLists, this.eventos, () => {
+      this.menuLists.classList.remove(this.class);
+      this.menuButton.classList.remove(this.class);
+    });
+  }
+
+  addMenuHamburguerEvents() {
+    this.eventos.forEach((evento) =>
+      this.menuButton.addEventListener(evento, this.openMenu)
+    );
+  }
+
+  init() {
+    if (this.menuButton && this.menuLists) {
+      this.addMenuHamburguerEvents();
     }
-
-    eventos.forEach((evento) => menuButton.addEventListener(evento, openMenu));
+    return this;
   }
 }
