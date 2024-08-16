@@ -7,7 +7,7 @@ import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import ScrolAnime from "./modules/scroll-anima.js";
 
-import initDropdownMenu from "./modules/dropdown-menu.js";
+import DropdownMenu from "./modules/dropdown-menu.js";
 import initMenuHamburguer from "./modules/menu-hamburguer.js";
 import initHorarioFuncionamento from "./modules/horario-funcionamento.js";
 
@@ -37,8 +37,14 @@ fetchAnimais("../../animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
 
 const scrolAnime = new ScrolAnime('[data-anime="scrol"]');
-scrolAnime.init()
+scrolAnime.init();
 
-initDropdownMenu();
+const dropdownMenu = new DropdownMenu(
+  "[data-dropdown]",
+  "[data-dropdown] > a",
+  ["touchstart", "click"]
+);
+dropdownMenu.init();
+
 initMenuHamburguer();
 initHorarioFuncionamento();
