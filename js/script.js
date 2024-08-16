@@ -6,10 +6,9 @@ import Tooltip from "./modules/tooltip.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import ScrolAnime from "./modules/scroll-anima.js";
-
 import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuHamburguer from "./modules/menu-hamburguer.js";
-import initHorarioFuncionamento from "./modules/horario-funcionamento.js";
+import HorarioFuncionamento from "./modules/horario-funcionamento.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="smooth"] a[href^="#"]');
 scrollSuave.init();
@@ -53,4 +52,5 @@ const menuHamburguer = new MenuHamburguer(
 );
 menuHamburguer.init()
 
-initHorarioFuncionamento();
+const horarioFuncionamento = new HorarioFuncionamento("[data-semana]", "aberto");
+horarioFuncionamento.init()
