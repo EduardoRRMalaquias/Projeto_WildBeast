@@ -1,9 +1,11 @@
+import debounce from "../debouce";
+
 export default class ScrolAnime {
   constructor(sections) {
     this.sections = document.querySelectorAll(sections);
     this.mediaScroll = window.innerWidth * 0.6;
 
-    this.checkDistances = this.checkDistances.bind(this);
+    this.checkDistances = debounce(this.checkDistances.bind(this), 50);
   }
 
   // pega a distancia de cada item em rela~ção ao topo do site
