@@ -8,7 +8,7 @@ import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import ScrolAnime from "./modules/scroll-anima.js";
 
 import DropdownMenu from "./modules/dropdown-menu.js";
-import initMenuHamburguer from "./modules/menu-hamburguer.js";
+import MenuHamburguer from "./modules/menu-hamburguer.js";
 import initHorarioFuncionamento from "./modules/horario-funcionamento.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="smooth"] a[href^="#"]');
@@ -46,5 +46,11 @@ const dropdownMenu = new DropdownMenu(
 );
 dropdownMenu.init();
 
-initMenuHamburguer();
+const menuHamburguer = new MenuHamburguer(
+  '[data-menu="button"]',
+  '[data-menu="list"]',
+  ["touchstart", "click"]
+);
+menuHamburguer.init()
+
 initHorarioFuncionamento();
