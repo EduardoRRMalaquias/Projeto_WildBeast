@@ -11,8 +11,8 @@ export default class Tooltip {
   // move a tooltip com base no movimento do mouse
   onMouseMouve(event) {
     this.tooltipBox.style.top = `${event.pageY + 20}px`;
-    if (event.pageX + 190 > window.innerWidth) {
-      this.tooltipBox.style.left = `${event.pageX - 190}px`;
+    if (event.pageX + 220 > window.innerWidth) {
+      this.tooltipBox.style.left = `${event.pageX - 220}px`;
     } else {
       this.tooltipBox.style.left = `${event.pageX + 20}px`;
     }

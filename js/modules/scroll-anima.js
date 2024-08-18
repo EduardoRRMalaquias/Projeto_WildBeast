@@ -1,4 +1,4 @@
-import debounce from "../debouce";
+import debounce from "./debouce";
 
 export default class ScrolAnime {
   constructor(sections) {
