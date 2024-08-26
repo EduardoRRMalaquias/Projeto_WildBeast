@@ -7,6 +7,11 @@
   <title>WildBeast - Cervo</title>
   <meta name="description" content="É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos genéticos reafirmam que o lobo cinzento é ancestral do cão doméstico">
 
+  <script>
+    document.documentElement.className += " js"
+  </script>
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -15,24 +20,25 @@
 
 <body class="estrutura" style="--cor-p1: #E58A2E;--cor-p2: #F2AC49;">
   <header class="header">
-    <a href="./index.html" class="logo"><img src="img/wildbeast.svg" alt="WildBeast"></a>
-    <nav class="nav-menu">
-      <menu data-menu="smooth">
-        <li><a href="#faq">Sobre</a></li>
+    <a href="../index.html" class="logo"><img src="../img/wildbeast.svg" alt="WildBeast"></a>
+    <nav class="nav-menu" data-menu="smooth">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <menu data-menu="list" id="menu">
+        <li><a href="../index.html#faq">Sobre</a></li>
         <li data-dropdown>
           <a href="animais/lobo.html">Animais↓</a>
           <ul class="dropdown-menu">
-            <li><a href="./animais/lobo.html">Lobo</a></li>
-            <li><a href="./animais/cervo.html">Cervo</a></li>
-            <li><a href="./animais/leao.html">Leão</a></li>
-            <li><a href="./animais/gato.html">Gato</a></li>
-            <li><a href="./animais/vaca.html">Vaca</a></li>
-            <li><a href="./animais/ovelha.html">Ovelha</a></li>
-            <li><a href="./animais/abelha.html">Abelha</a></li>
+            <li><a href="./lobo.html">Lobo</a></li>
+            <li><a href="./cervo.html">Cervo</a></li>
+            <li><a href="./leao.html">Leão</a></li>
+            <li><a href="./gato.html">Gato</a></li>
+            <li><a href="./vaca.html">Vaca</a></li>
+            <li><a href="./ovelha.html">Ovelha</a></li>
+            <li><a href="./abelha.html">Abelha</a></li>
           </ul>
         </li>
-        <li><a href="#contato">Contatos</a></li>
-        <li><a data-modal="abrir" href="login.html">Login ➜</a></li>
+        <li><a href="../index.html#contato">Contatos</a></li>
+        <li><a data-modal="abrir" href="login.html">Login <span class="arrow-white"></a></li>
       </menu>
     </nav>
   </header>
@@ -40,7 +46,7 @@
     <ul>
       <li>
         <a href="lobo.html">
-          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="100px" height="100px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 100 100" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+          <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 100 100" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
             <defs>
               <style type="text/css">
                 <![CDATA[
@@ -403,11 +409,11 @@
   </nav>
 
   <main class="content">
-    <div class="titulo">
+    <div class="titulo" data-anime="scrol">
       <h1>Cervo</h1>
       <span>da família Canis Lupus</span>
     </div>
-    <div class="caracteristicas">
+    <div class="caracteristicas" data-anime="scrol">
       <div class="caracteristica">
         <span class="valor">72</span>
         <span class="rotulo">KG</span>
@@ -417,21 +423,21 @@
         <span class="rotulo">Idade</span>
       </div>
     </div>
-    <p class="col-larga">É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos genéticos reafirmam que o lobo cinzento é ancestral do cão doméstico</p>
-    <figure class="imagem-destaque">
+    <p class="col-larga" data-anime="scrol">É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás.[2] O sequenciamento de DNA e estudos genéticos reafirmam que o lobo cinzento é ancestral do cão doméstico</p>
+    <figure class="imagem-destaque" data-anime="scrol">
       <img src="../img/animais/cervo1.jpg" alt="Lobo Uivando">
     </figure>
-    <p class="destaque">Os lobos cinzas são conhecidos por seu uivo único, usado para comunicação entre matilhas a longas distâncias. Suas pegadas são diferenciadas de cães devido à seus dedos, que se alinham de forma mais reta.</p>
-    <figure>
+    <p class="destaque" data-anime="scrol">Os lobos cinzas são conhecidos por seu uivo único, usado para comunicação entre matilhas a longas distâncias. Suas pegadas são diferenciadas de cães devido à seus dedos, que se alinham de forma mais reta.</p>
+    <figure data-anime="scrol">
       <img src="../img/animais/cervo2.jpg" alt="2 Lobos se acariciando">
     </figure>
-    <p>O peso e tamanho dos lobos variam muito em todo o mundo, tendendo a aumentar proporcionalmente com a latitude, como previsto pela teoria de Christian Bergmann. Em geral, a altura, medida a partir dos ombros, varia de 60 a 95 centímetros.</p>
-    <p>O peso varia geograficamente. Em média, os lobos europeus pesam 38,5 kg; os lobos da América do Norte, 36 kg; os lobos indianos e árabes, 25 kg.[7] Embora raros, lobos com mais de 77 kg foram encontrados no Alasca, Canadá,[8] e na antiga União Soviética.</p>
+    <p data-anime="scrol">O peso e tamanho dos lobos variam muito em todo o mundo, tendendo a aumentar proporcionalmente com a latitude, como previsto pela teoria de Christian Bergmann. Em geral, a altura, medida a partir dos ombros, varia de 60 a 95 centímetros.</p>
+    <p data-anime="scrol">O peso varia geograficamente. Em média, os lobos europeus pesam 38,5 kg; os lobos da América do Norte, 36 kg; os lobos indianos e árabes, 25 kg.[7] Embora raros, lobos com mais de 77 kg foram encontrados no Alasca, Canadá,[8] e na antiga União Soviética.</p>
 
-    <blockquote class="citacao col-larga">
+    <blockquote class="citacao col-larga" data-anime="scrol">
       <p>“Há algo no uivar do lobo que tira um homem do aqui e agora e o transporta para uma floresta da mente.”</p>
     </blockquote>
-    <ul class="atributos">
+    <ul class="atributos" data-anime="scrol">
       <li>Surgiu: 12.000 anos</li>
       <li>Tipo: Mamífero</li>
       <li>Idade Média: 13 anos</li>
@@ -439,16 +445,16 @@
       <li>Fêmea adulta: 55kg</li>
       <li>Família: Lupus</li>
     </ul>
-    <div class="informacoes">
+    <div class="informacoes" data-anime="scrol">
       <p>Originário do Pleistoceno Superior, o lobo cinzento é ancestral do cão doméstico, confirmado por estudos genéticos. Além de suas raízes antigas, os lobos demonstram habilidades de caça avançadas e um complexo sistema social, fundamentais para sua adaptação em diversos ambientes.</p>
       <p>Os lobos exibem variações significativas de peso ao redor do mundo. Enquanto lobos europeus e da América do Norte pesam cerca de 38,5 kg e 36 kg, respectivamente, lobos indianos e árabes são mais leves, com cerca de 25 kg em média. Exemplares excepcionais podem ultrapassar 77 kg, especialmente em regiões como o Alasca, Canadá e antiga União Soviética, refletindo adaptações únicas em diferentes ecossistemas.</p>
     </div>
-    <figure class="col-larga">
+    <figure class="col-larga" data-anime="scrol">
       <img src="../img/animais/cervo3.jpg" alt="Matilha de Lobos interagindo">
     </figure>
   </main>
 
-  <aside class="anuncios">
+  <aside class="anuncios" data-anime="scrol">
     <figure class="anuncio-item">
       <img src="../img/anuncio-1.jpg" alt="Toda semana livro novo">
     </figure>
@@ -460,7 +466,22 @@
   <footer class="footer">
     <p><a href="https://eduardorrmalaquias.github.io/projeto_portifolio/">Eduardo R. R. Malaquias</a> © 2024. Alguns direitos reservados.</p>
   </footer>
-  <script src="../js/script.js"></script>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">Fechar</button>
+      <form action="./" method="post">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha">
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
+
+  <script type="module" src="../main.js"></script>
+</body>
 </body>
 
 </html>
