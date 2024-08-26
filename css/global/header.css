@@ -33,6 +33,13 @@
   background: var(--cor-p1);
 }
 
+.arrow-white {
+  background: url(../../img/arrow-white.svg) no-repeat center center;
+  display: inline-block;
+  width: 8px;
+  height: 10px;
+}
+
 @media (max-width: 47rem) {
   .header {
     grid-template-columns: auto;

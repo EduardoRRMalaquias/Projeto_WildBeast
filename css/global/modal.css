@@ -48,10 +48,10 @@
   position: absolute;
   top: -30px;
   right: -30px;
-  background-color: var(--cor-p1);
-  font-size: 1.2rem;
-  color: var(--cor-01);
+  background: var(--cor-p1) url(../../img/fechar.svg) no-repeat center center;
   cursor: pointer;
+  overflow: hidden;
+  text-indent: -999px;
 }
 
 .modal label {
@@ -88,4 +88,11 @@
 .modal button:hover {
   background-color: var(--cor-p2);
   color: #0a0a0a;
+}
+
+
+@media (max-width: 600px){
+  .modal {
+    min-width: 180px;
+  }
 }

@@ -5,6 +5,7 @@
 @import "./global/footer.css";
 @import "./global/dropdown-menu.css";
 @import "./global/menu-hanburguer.css";
+@import "./global/modal.css";
 
 /* introducao */
 @import "./introducao/introducao.css";
@@ -12,7 +13,6 @@
 @import "./introducao/faq.css";
 @import "./introducao/numeros.css";
 @import "./introducao/contato.css";
-@import "./introducao/modal.css";
 @import "./introducao/tooltip.css";
 @import "./introducao/slide.css";
 

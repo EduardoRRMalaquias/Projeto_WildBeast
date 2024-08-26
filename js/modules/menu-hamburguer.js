@@ -13,7 +13,8 @@ export default class MenuHamburguer {
     this.openMenu = this.openMenu.bind(this);
   }
 
-  openMenu() {
+  openMenu(event) {
+    event.preventDefault();
     this.menuLists.classList.toggle(this.class);
     this.menuButton.classList.toggle(this.class);
     clickOutside(this.menuLists, this.eventos, () => {
