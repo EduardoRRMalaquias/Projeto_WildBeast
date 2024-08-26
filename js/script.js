@@ -9,6 +9,9 @@ import ScrolAnime from "./modules/scroll-anima.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuHamburguer from "./modules/menu-hamburguer.js";
 import HorarioFuncionamento from "./modules/horario-funcionamento.js";
+import { SlideNav } from "./modules/slide.js";
+
+document.querySelector('a')
 
 const scrollSuave = new ScrollSuave('[data-menu="smooth"] a[href^="#"]');
 scrollSuave.init();
@@ -57,3 +60,8 @@ const horarioFuncionamento = new HorarioFuncionamento(
   "aberto"
 );
 horarioFuncionamento.init();
+
+const slide = new SlideNav(".slide", ".slide-wrapper");
+slide.init();
+slide.addArrow(".prev", ".next");
+slide.addControl(".custom-controls");

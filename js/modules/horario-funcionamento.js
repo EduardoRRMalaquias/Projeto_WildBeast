@@ -29,7 +29,7 @@ export default class HorarioFuncionamento {
 
   ativarCasoAberto() {
     if (this.verificarFuncionamento()) {
-      horarioFuncionamento.classList.add(this.class);
+      this.horarioFuncionamento.classList.add(this.class);
     }
   }
 

@@ -14,6 +14,7 @@
 @import "./introducao/contato.css";
 @import "./introducao/modal.css";
 @import "./introducao/tooltip.css";
+@import "./introducao/slide.css";
 
 /*animais*/
 @import "./animais/asidenav.css";
