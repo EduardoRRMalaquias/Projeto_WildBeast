@@ -11,8 +11,6 @@ import MenuHamburguer from "./modules/menu-hamburguer.js";
 import HorarioFuncionamento from "./modules/horario-funcionamento.js";
 import { SlideNav } from "./modules/slide.js";
 
-document.querySelector('a')
-
 const scrollSuave = new ScrollSuave('[data-menu="smooth"] a[href^="#"]');
 scrollSuave.init();
 
